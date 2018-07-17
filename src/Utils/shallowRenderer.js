@@ -65,7 +65,7 @@ class ShallowRenderer {
         }
         this._mountClassComponent(element.props, context);
       } else {
-        this._rendered = element.type(element.props, context);
+        this._rendered = React.createElement(element.type, element.props, context);
       }
     }
 
